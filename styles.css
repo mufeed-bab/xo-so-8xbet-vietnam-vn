@@ -1,0 +1,366 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+/* Base styles and typography */
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Nunito', sans-serif;
+  --font-size-base: clamp(0.8rem, 0.7vw + 0.3rem, 0.9rem);
+  --line-height-base: 1.5;
+  --font-weight-normal: 400;
+  --font-weight-bold: 500;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+h1 { font-size: clamp(1.5rem, 3vw + 0.6rem, 2rem); }
+h2 { font-size: clamp(1.3rem, 2.5vw + 0.5rem, 1.8rem); }
+h3 { font-size: clamp(1.1rem, 2vw + 0.4rem, 1.6rem); }
+h4 { font-size: clamp(1rem, 1.5vw + 0.3rem, 1.4rem); }
+h5 { font-size: clamp(0.9rem, 1vw + 0.2rem, 1.2rem); }
+h6 { font-size: clamp(0.8rem, 0.8vw + 0.2rem, 1rem); }
+
+/* Theme: Default (Light/Dark) */
+/* :root {
+  --color-bg: #F1F6F8;
+  --color-text: #12171C;
+  --color-primary: #254E65;
+  --color-secondary: #2295D3;
+  --color-accent: #75B8DB;
+  --color-link: #0056b3;
+  --color-link-hover: #003d82;
+  --color-table-text: #212529;
+}
+
+.dark-mode {
+  --color-bg: #060A0C;
+  --color-text: #E4E9ED;
+  --color-primary: #99C3D9;
+  --color-secondary: #2C9EDC;
+  --color-accent: #24668A;
+  --color-link: #6ab0de;
+  --color-link-hover: #9ccef0;
+  --color-table-text: #E4E9ED;
+} */
+
+/* Theme: Forest */
+/* :root {
+  --color-bg: #F0F7F4;
+  --color-text: #2C3E50;
+  --color-primary: #2E8B57;
+  --color-secondary: #66CDAA;
+  --color-accent: #3CB371;
+  --color-link: #1e5631;
+  --color-link-hover: #133d21;
+  --color-table-text: #212529;
+}
+
+.dark-mode {
+  --color-bg: #1A2F2F;
+  --color-text: #E0F0E3;
+  --color-primary: #4CAF50;
+  --color-secondary: #81C784;
+  --color-accent: #2E7D32;
+  --color-link: #8bc34a;
+  --color-link-hover: #a2cf6e;
+  --color-table-text: #E0F0E3;
+} */
+
+/* Theme: Ocean */
+
+/* :root {
+  --color-bg: #E6F3F8;
+  --color-text: #1A3A54;
+  --color-primary: #0077BE;
+  --color-secondary: #4FB0C6;
+  --color-accent: #20B2AA;
+  --color-link: #00508c;
+  --color-link-hover: #003966;
+  --color-table-text: #212529;
+}
+
+.dark-mode {
+  --color-bg: #0A2A43;
+  --color-text: #E6F3F8;
+  --color-primary: #00A7E1;
+  --color-secondary: #40C4FF;
+  --color-accent: #0097A7;
+  --color-link: #4dd0e1;
+  --color-link-hover: #7fdbff;
+  --color-table-text: #E6F3F8;
+} */
+
+/* Theme: Sunset */
+/* :root {
+  --color-bg: #FFF9F5;
+  --color-text: #2C3E50;
+  --color-primary: #FF6B6B;
+  --color-secondary: #FFA36C;
+  --color-accent: #4ECDC4;
+  --color-link: #E84855;
+  --color-link-hover: #D1364E;
+  --color-table-text: #2C3E50;
+}
+
+.dark-mode {
+  --color-bg: #2C3E50;
+  --color-text: #FFF9F5;
+  --color-primary: #FF8E72;
+  --color-secondary: #FFB88C;
+  --color-accent: #45B7A0;
+  --color-link: #FF6B6B;
+  --color-link-hover: #FF8E72;
+  --color-table-text: #FFF9F5;
+} */
+
+/* Theme: Nordic Fjord */
+/* :root {
+  --color-bg: #F0F8FF;
+  --color-text: #2C3E50;
+  --color-primary: #3498DB;
+  --color-secondary: #5DADE2;
+  --color-accent: #85C1E9;
+  --color-link: #2980B9;
+  --color-link-hover: #21618C;
+  --color-table-text: #2C3E50;
+}
+
+.dark-mode {
+  --color-bg: #1C2833;
+  --color-text: #ECF0F1;
+  --color-primary: #3498DB;
+  --color-secondary: #5DADE2;
+  --color-accent: #2980B9;
+  --color-link: #85C1E9;
+  --color-link-hover: #AED6F1;
+  --color-table-text: #ECF0F1;
+} */
+
+/* Theme: Fjord Sunrise */
+:root {
+  --color-bg: #FFF5E6;
+  --color-text: #34495E;
+  --color-primary: #FF7F50;
+  --color-secondary: #FFA07A;
+  --color-accent: #40E0D0;
+  --color-link: #D35400;
+  --color-link-hover: #A04000;
+  --color-table-text: #34495E;
+}
+
+.dark-mode {
+  --color-bg: #2C3E50;
+  --color-text: #FFF5E6;
+  --color-primary: #FF7F50;
+  --color-secondary: #FFA07A;
+  --color-accent: #40E0D0;
+  --color-link: #FFB74D;
+  --color-link-hover: #FFA726;
+  --color-table-text: #FFF5E6;
+}
+
+/* Theme: Tundra */
+/* :root {
+  --color-bg: #F4F7F5;
+  --color-text: #2C3E50;
+  --color-primary: #5D6D7E;
+  --color-secondary: #8EA4B8;
+  --color-accent: #A9CCE3;
+  --color-link: #4A5E74;
+  --color-link-hover: #34495E;
+  --color-table-text: #2C3E50;
+}
+
+.dark-mode {
+  --color-bg: #2C3E50;
+  --color-text: #F4F7F5;
+  --color-primary: #8EA4B8;
+  --color-secondary: #A9CCE3;
+  --color-accent: #5D6D7E;
+  --color-link: #B3C6D9;
+  --color-link-hover: #D0DCE6;
+  --color-table-text: #F4F7F5;
+} */
+
+/* Theme: "Lavender Fields" */
+/* :root {
+  --color-bg: #F5F0FF;
+  --color-text: #2D2D44;
+  --color-primary: #9370DB;
+  --color-secondary: #BA55D3;
+  --color-accent: #DDA0DD;
+  --color-link: #7A378B;
+  --color-link-hover: #551A8B;
+  --color-table-text: #2D2D44;
+}
+
+.dark-mode {
+  --color-bg: #2D2D44;
+  --color-text: #F5F0FF;
+  --color-primary: #BA55D3;
+  --color-secondary: #9370DB;
+  --color-accent: #DDA0DD;
+  --color-link: #E6E6FA;
+  --color-link-hover: #D8BFD8;
+  --color-table-text: #F5F0FF;
+} */
+
+/* Theme: "Meadow" */
+/* :root{
+  --color-bg: #F0FFF0;
+  --color-text: #2F4F4F;
+  --color-primary: #3CB371;
+  --color-secondary: #66CDAA;
+  --color-accent: #8FBC8F;
+  --color-link: #2E8B57;
+  --color-link-hover: #228B22;
+  --color-table-text: #2F4F4F;
+}
+
+.dark-mode {
+  --color-bg: #2F4F4F;
+  --color-text: #F0FFF0;
+  --color-primary: #66CDAA;
+  --color-secondary: #3CB371;
+  --color-accent: #2E8B57;
+  --color-link: #98FB98;
+  --color-link-hover: #90EE90;
+  --color-table-text: #F0FFF0;
+} */
+
+
+/* Custom text color classes */
+.text-bg {
+  color: var(--color-bg) !important;
+}
+
+.text-main {
+  color: var(--color-text) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.text-accent {
+  color: var(--color-accent) !important;
+}
+
+.text-link {
+  color: var(--color-link) !important;
+}
+
+.text-link-hover {
+  color: var(--color-link-hover) !important;
+}
+
+.text-table {
+  color: var(--color-table-text) !important;
+}
+
+/* Additional utility classes */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-accent) !important;
+}
+
+/* Ensure text contrast on colored backgrounds */
+.bg-primary, .bg-secondary, .bg-accent {
+  color: var(--color-bg) !important;
+}
+
+/* Apply theme colors */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.navbar, .jumbotron, .footer {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+/* Shared Styles */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 1rem 0;
+}
+
+.lead {
+  font-size: 1.15rem;
+}
+
+.card-body,
+.list-group-item {
+  color: var(--color-primary);
+}
+
+
+
+/* Table styling */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--color-table-text); 
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: clamp(1.3rem, 2.5vw + 0.5rem, 1.8rem);
+  }
+  
+  .jumbotron p {
+    font-size: var(--font-size-base);
+  }
+}
